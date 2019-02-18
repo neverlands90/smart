@@ -1,9 +1,6 @@
 package com.fakefantasy.framework;
 
-import com.fakefantasy.framework.helper.BeanHelper;
-import com.fakefantasy.framework.helper.ClassHelper;
-import com.fakefantasy.framework.helper.ControllerHelper;
-import com.fakefantasy.framework.helper.IocHelper;
+import com.fakefantasy.framework.helper.*;
 import com.fakefantasy.framework.util.ClassUtil;
 
 public final class HelperLoader {
@@ -11,6 +8,7 @@ public final class HelperLoader {
         Class<?>[] classList = {
                 ClassHelper.class,
                 BeanHelper.class,
+                AopHelper.class,
                 IocHelper.class,
                 ControllerHelper.class
         };
